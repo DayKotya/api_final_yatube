@@ -1,8 +1,19 @@
-# api_final
-api final
+### Описание
 
-
-### Как запустить проект:
+Проект api_final_yatube представляет собой API для сервиса yatube. API удобно использовать для обмена информацией между yatube и другими сервисами.
+В проекте описаны эндопинты:
+```
+api/v1/posts/
+api/v1/posts/{id}/
+api/v1/posts/{post_id}/comments/
+api/v1/posts/{post_id}/comments/{comment_id}
+api/v1/groups/
+api/v1/groups/{id}/
+api/v1/follow/
+```
+Данные эндпоинты используются для взаимодействия с моделями Post, Comment, Group, Follow.
+В проекте используется авторизация с помощью JWT-токена.
+### Установка
 
 Клонировать репозиторий и перейти в него в командной строке:
 
@@ -45,3 +56,13 @@ python3 manage.py migrate
 ```
 python3 manage.py runserver
 ```
+
+### Примеры
+
+Пример создания пользователя с помощью JWT-токена:
+
+отправляем
+```
+фывфыв
+```
+
